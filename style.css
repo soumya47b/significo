@@ -1,0 +1,83 @@
+:root {
+          --white: #fff;
+          --salmon: #ef9d71;
+          --salmon-light:#ef9d71;
+          --salmon-dark: #422320;
+          --cyan: #aedee0;
+          --cyan-dark: #172b2b;
+          --black: #000000;
+          --yellow:#f5f19c;
+          --brown:#796343;
+          --blue-dark: #203ba9;
+}
+
+*::selection {
+          background-color: var(--salmon-light);
+}
+
+body[theme="black"] {
+
+          background-color: var(--black);
+}
+
+body[theme="black"] .section {
+          color: var(--white);
+}
+
+body[theme="cyan"] {
+          background-color:var(--cyan); 
+}
+
+body[theme="cyan"] .section {
+          color: var(--cyan-dark);
+}
+
+body[theme="salmon"] {
+          background-color:var(--salmon);
+}
+body[theme="salmon"] .section{
+          color: var(--salmon-dark);
+}
+
+
+body[theme="white"] {
+          background-color: var(--white);
+}
+
+body {
+          transition: background-color ease-in-out 0.5s;
+}
+
+.card {
+          transition: background-color 0.1s;
+
+}
+
+.row {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+}
+.heading-1 {
+          font-weight: 400;
+          font-style: normal;
+}
+
+.heading-2 {
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.video_div {
+          clip-path: circle(var(--clip) at 44.5% 47.8%);
+}
+
+.btn:hover svg {
+          transform: rotate(-18deg);
+}
+
+/*.card {
+          transition: all ease-out 0.2s;
+}
+.card:hover {
+          transform: scale(1.08);
+          background-color: var(--blue-dark);
+}*/
